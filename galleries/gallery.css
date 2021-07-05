@@ -9,8 +9,9 @@ body{
     justify-content: start;
     align-items: center;
 }
-.go-back a{
+.vai-descrizione, .freccia-main{
     margin-right: 10%;
+    font-weight: 600;
 }
 .main-wrapper{
     display: flex;
@@ -32,7 +33,7 @@ body{
 }
 .img-gallery{
     height: 70vh;
-    margin: 0 20vw 0 0;
+    margin: 0 10vw 0 0;
     
 }
 section{
@@ -88,6 +89,20 @@ section{
     top: 170px;
     right: -290px;
 }
+@media(min-width:650px){
+    p{
+        display: none;
+    }
+    .mobile-gallery-nav{
+        display: none;
+    }
+    .barra-superiore-mobile{
+        display: none;
+    }
+    .il-progetto-mobile{
+        display: none;
+    }
+}
 @media(max-width: 1400px){
 
         .gallery-slider{
@@ -129,4 +144,101 @@ section{
 
 
 
+}
+@media(max-width: 650px){
+    sidebar{
+        display: none;
+        width: 0;
+    }
+    body{
+        height: auto;
+    }
+    main{
+        margin: 0;
+        
+    }
+    .main-wrapper{
+        width: 100vw;
+        
+    }
+    .gallery-slider{
+        flex-direction: row;
+        overflow-x: scroll;
+        width: 80vw;
+        scroll-snap-type: X mandatory;
+    }
+    .titolo-grande{
+        font-size: 40px;
+        right: -18%;
+        top:55px;
+        width: 80vw;
+    }
+    .data-grande{
+        bottom: 10px;
+        display: none;
+        
+    }
+    .img-gallery{
+        height: auto;
+        width: 80vw;
+        
+    }
+    .puntini{
+        position: relative;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+    .pallino-grigio{
+        margin: 0 5px;
+    }
+    .content-wrap{
+        width: 80%;
+        justify-content: flex-start;
+        overflow-y: scroll;
+    }
+    section{
+        width: 100%;
+    }
+    p{
+        height: 10%;
+    }
+    .freccia-main{
+        width: 20%;
+        margin-right: 0;
+    }
+    .mobile-gallery-nav{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        padding:10% 0;
+    }
+    .mobile-nav-link-wrapper{
+        display: flex;
+        flex-direction: row;
+    }
+    .mnlw-right{
+        justify-content: flex-end;
+    }
+    .barra-superiore-mobile{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 5%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .barra-superiore-mobile img{
+        width: 20%;
+    }
+    .go-back{
+        margin-bottom: 5%;
+    }
+    .il-progetto-mobile{
+        font-weight: 600;
+    }
+    .il-progetto{
+        display: none;
+    }
 }

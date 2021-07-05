@@ -44,3 +44,13 @@ a.selezione:hover, a.selezione:active{
 .active{
     background-color: #D61A0C;
 }
+@media(max-width: 650px){
+    .left-sidebar{
+        width: 20%;
+        height: 100vh;
+    }
+    a.selezione{
+        padding: 11px 7px;
+        
+    }
+}
