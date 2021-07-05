@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olivetti</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/nav.css">
     <link rel="stylesheet" href="https://use.typekit.net/omi4nqz.css">
+    <script src="/app.js"></script>
     <link rel="stylesheet" href=
     "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity=
@@ -40,7 +43,7 @@
             <img src="svg/olivetti.svg" width="60%" class="olivetti">
             <div class="nav">
                 <div class="spacing"></div>
-                <a href="#" class="freccia"><img src="svg/freccia.svg" height="50px"></a>
+                <a href="#0" class="freccia"><img src="svg/freccia.svg" height="50px"></a>
                 <div class="date">
                     <a href="#1" class="selezione active">1991</a>
                     <a href="#2" class="selezione">1992</a>
@@ -52,7 +55,7 @@
                     <a href="#8" class="selezione">1998</a>
                     <a href="#9" class="selezione">1999</a>
                 </div>
-                <a href="#" class="freccia" style="transform: rotate(180deg);"><img src="svg/freccia.svg" height="50px"></a>
+                <a href="#bottom" class="freccia"><img src="svg/freccia_down.svg" height="50px"></a>
                 <div class="spacing"></div>
             </div>
         </div>
@@ -77,8 +80,13 @@
                     Lettera 22 è l’espressione oggettivata di un’idea, di un progetto industriale consapevole di essere.
                 </p>
                 <div class="wrapper-go-gallery">
-                    <div class="go-gallery">Vai alla gallery</div>
-                    <img src="svg/freccia_gallery.svg">
+                    <a href="/galleries/1">
+                        <div class="go-gallery">Vai alla gallery</div>
+                    </a>
+                    <a href="/galleries/1">
+                        <img src="/svg/freccia_gallery.svg">
+                    </a>
+                    
 
                 </div> 
                 
@@ -176,7 +184,7 @@
     }
 
     /* Code for changing active 
-    link on Scrolling */
+    link on Scrolling 
     $(window).scroll(function () {
         var distance = $(window).scrollTop();
         $('.section').each(function (i) {
@@ -192,6 +200,7 @@
             }
         });
     }).scroll();
+    */
 </script>
       
 </html>

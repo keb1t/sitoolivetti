@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+      *{
+          font-family: 'Roc Grotesk', sans-serif;
+          
+      }
+  
+      body{
+          background: #F3F3F3;
+          margin: 0;
+      }
+      .olivetti{
+          margin-top: 25%;
+      }
+  
+      main{
+          margin-left: 10%;
+          width: 90%;
+          height: 100%;
+          
+          text-align: center;
+      }
+      .olivetti-bg{
+        position: fixed;
+        margin: 2% 12%;
+        z-index: -1;
+    }
