@@ -44,7 +44,7 @@
     .go-gallery{
         padding: 0 15px;
         font-weight: 600;
-        font-size: 25px;
+        font-size: 18px;
     }
     .paragrafo{
         display: flex;
@@ -52,13 +52,13 @@
         justify-content: space-between;
         width: 20%;
         text-align: left;
-        font-size: 15px;
+        font-size: 18px;
         height: 100%;
         
     }
     p{
-        max-height: 50vh;
-        overflow-y: scroll;
+        max-height: 60vh;
+        
         line-height: 24px;
     }
     .data-grande{
@@ -66,20 +66,23 @@
         position: absolute;
         bottom: -60px;
         left: -15px;
-        font-style: normal;
+        font-weight: 500;
     }
     .titolo-grande{
         font-size: 80px;
         position: absolute;
         top: 5px;
-        right: -140px;
+        right: -200px;
+        font-weight: 500;
     }
     .nome-autore{
         font-size: 30px;
-        font-weight: bold;
+        font-weight: 600;
         align-self: flex-end;
-        line-height: 48px;
+        line-height: 38px;
         margin-bottom: 10%;
+        text-align: left;
+        width: 16vw;
     }
     .wrapper-go-gallery-mobile{
         display: none;

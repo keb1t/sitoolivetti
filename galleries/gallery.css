@@ -1,6 +1,7 @@
-body{
 
+body{
     overflow-y: hidden;
+
 }
 .go-back{
     width: 100%;
@@ -12,6 +13,7 @@ body{
 .vai-descrizione, .freccia-main{
     margin-right: 10%;
     font-weight: 600;
+    font-size: 18px;
 }
 .main-wrapper{
     display: flex;
@@ -21,6 +23,7 @@ body{
     width: 100%;
     justify-content: center;
     flex-grow: 1;
+    
 }
 .content-wrap{
     position: relative;
@@ -30,6 +33,7 @@ body{
     justify-content: space-around;
     width: 30%;
     height: 100%;
+    
 }
 .img-gallery{
     height: 70vh;
@@ -52,11 +56,14 @@ section{
     scroll-behavior: smooth;
     scroll-snap-type: X mandatory;
 }
+.puntini{
+    margin-left: 9%;
+}
 .pallino-grigio{
     display: inline-block;
     width: 9px;
     height: 9px;
-    margin: 0 10px;
+    margin: 0 5px;
     background-color: #E5E5E5;
     border-radius: 50%;
     position: relative;
@@ -74,7 +81,7 @@ section{
     right: -9px;
 }
 .active{
-    background-color:red;
+    background-color:#D61A0C;
 }
 .data-grande{
     font-size: 80px;
@@ -82,12 +89,15 @@ section{
     bottom: 60px;
     left: -120px;
     font-style: normal;
+    font-weight: 500;
 }
 .titolo-grande{
     font-size: 80px;
     position: absolute;
     top: 170px;
     right: -290px;
+    font-weight: 500;
+
 }
 @media(min-width:650px){
     p{
@@ -100,6 +110,9 @@ section{
         display: none;
     }
     .il-progetto-mobile{
+        display: none;
+    }
+    .mobile{
         display: none;
     }
 }
@@ -124,10 +137,11 @@ section{
             right: 10%;
         }
         .pallino-grigio{
-            margin: 10px 0;
+            margin: 5px 0;
         }
         .content-wrap{
             justify-content: center;
+            margin-top: 15%;
         }
         .data-grande{
             bottom: 150px;
@@ -175,6 +189,7 @@ section{
     }
     .data-grande{
         bottom: 10px;
+        position: absolute;
         display: none;
         
     }
@@ -187,6 +202,7 @@ section{
         position: relative;
         flex-direction: row;
         align-self: flex-end;
+        right: 0;
     }
     .pallino-grigio{
         margin: 0 5px;
@@ -195,12 +211,14 @@ section{
         width: 80%;
         justify-content: flex-start;
         overflow-y: scroll;
+        margin-top: 0%;
     }
     section{
         width: 100%;
     }
     p{
         height: 10%;
+        text-align: left;
     }
     .freccia-main{
         width: 20%;
@@ -216,6 +234,9 @@ section{
     .mobile-nav-link-wrapper{
         display: flex;
         flex-direction: row;
+    }
+    .mobile-nav-link-wrapper div{
+        font-weight: 500;
     }
     .mnlw-right{
         justify-content: flex-end;
@@ -239,6 +260,9 @@ section{
         font-weight: 600;
     }
     .il-progetto{
+        display: none;
+    }
+    .desktop{
         display: none;
     }
 }
